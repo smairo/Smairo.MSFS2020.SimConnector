@@ -11,6 +11,7 @@ using Smairo.MSFS2020.Model;
 using Smairo.MSFS2020.Model.Enumeration;
 using Smairo.MSFS2020.Model.Structs;
 using Smairo.MSFS2020.SimConnector.Interfaces;
+using Smairo.MSFS2020.SimConnector.Writers;
 
 namespace Smairo.MSFS2020.SimConnector
 {
@@ -18,6 +19,10 @@ namespace Smairo.MSFS2020.SimConnector
     {
         // User-defined win32 event
         public const int WmUserSimconnect = 0x0402;
+
+        // Writer to use
+        private readonly IWriter _dataWriter = new JsonFileWriter();
+
         public bool Connected { get; private set; }
         private bool _collectionSet;
 
@@ -182,7 +187,10 @@ namespace Smairo.MSFS2020.SimConnector
 
         private void OnRecvEvent(SimConnect sender, SIMCONNECT_RECV_EVENT data)
         {
-            Console.WriteLine($"Event was {data.uEventID}");
+            _dataWriter.WriteToStoreAsync(planeCrashed: true)
+                .ConfigureAwait(false)
+                .GetAwaiter()
+                .GetResult();
         }
 
         #region Client reciever events
@@ -192,13 +200,6 @@ namespace Smairo.MSFS2020.SimConnector
 
         private void OnRecvSimobjectData(SimConnect sender, SIMCONNECT_RECV_SIMOBJECT_DATA data)
         {
-            var val = data.dwData.FirstOrDefault();
-            if (val is null)
-            {
-                return;
-            }
-
-            Console.WriteLine($"Val is: {data.dwRequestID} - {val}");
         }
 
         private void OnRecvSimobjectDataBytype(SimConnect sender, SIMCONNECT_RECV_SIMOBJECT_DATA_BYTYPE data)
@@ -209,23 +210,28 @@ namespace Smairo.MSFS2020.SimConnector
                 return;
             }
 
+            PlaneMetadatas? planeMetadata = null;
+            PlaneVariables? planeVariables = null;
+            SimulationVariables? simVariables = null;
             switch ((Definition)data.dwDefineID)
             {
                 case Definition.PlaneMetadata:
-                    var metadata = (PlaneMetadatas)val;
-                    Console.WriteLine($"Plane is: {metadata.Title} - {metadata.AtcModel}");
+                    planeMetadata = (PlaneMetadatas)val;
                     break;
                 case Definition.PlaneVariable:
-                    var planeVariables = (PlaneVariables)val;
-                    Console.WriteLine($"Plane is at: '{planeVariables.Latitude} {planeVariables.Longitude}' and flying in {planeVariables.Altitude} ft");
+                    planeVariables = (PlaneVariables)val;
                     break;
                 case Definition.SimulationVariable:
-                    var simulationVariables = (SimulationVariables)val;
-                    Console.WriteLine($"Can crash: {simulationVariables.RealismCrashDetection}. Crashing flag: {simulationVariables.CrashFlag}.");
+                    simVariables = (SimulationVariables)val;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+
+            _dataWriter.WriteToStoreAsync(planeMetadata, planeVariables, simVariables)
+                .ConfigureAwait(false)
+                .GetAwaiter()
+                .GetResult();
         }
 
         private void OnRecvException(SimConnect sender, SIMCONNECT_RECV_EXCEPTION data)
