@@ -114,6 +114,12 @@ namespace Smairo.MSFS2020.SimConnector
 
                 _simConnection.OnRecvClientData += OnRecvClientData;
 
+                // Get plane crash
+                _simConnection.OnRecvEvent += OnRecvEvent;
+                _simConnection.SubscribeToSystemEvent(
+                    Event.PlaneCrashed,
+                    "Crashed");
+
                 var definition = Definition.PlaneMetadata;
                 foreach (var value in GetMetadataRequests())
                 {
@@ -174,6 +180,11 @@ namespace Smairo.MSFS2020.SimConnector
             }
         }
 
+        private void OnRecvEvent(SimConnect sender, SIMCONNECT_RECV_EVENT data)
+        {
+            Console.WriteLine($"Event was {data.uEventID}");
+        }
+
         #region Client reciever events
         private void OnRecvClientData(SimConnect sender, SIMCONNECT_RECV_CLIENT_DATA data)
         {
@@ -198,24 +209,23 @@ namespace Smairo.MSFS2020.SimConnector
                 return;
             }
 
-            switch ((Definition) data.dwDefineID)
+            switch ((Definition)data.dwDefineID)
             {
                 case Definition.PlaneMetadata:
-                    var metadata = (PlaneMetadatas) val;
+                    var metadata = (PlaneMetadatas)val;
                     Console.WriteLine($"Plane is: {metadata.Title} - {metadata.AtcModel}");
                     break;
                 case Definition.PlaneVariable:
-                    var planeVariables = (PlaneVariables) val;
+                    var planeVariables = (PlaneVariables)val;
                     Console.WriteLine($"Plane is at: '{planeVariables.Latitude} {planeVariables.Longitude}' and flying in {planeVariables.Altitude} ft");
                     break;
                 case Definition.SimulationVariable:
-                    var simulationVariables = (SimulationVariables) val;
+                    var simulationVariables = (SimulationVariables)val;
                     Console.WriteLine($"Can crash: {simulationVariables.RealismCrashDetection}. Crashing flag: {simulationVariables.CrashFlag}.");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-            //Console.WriteLine($"Val is: {data.dwRequestID} - {val}");
         }
 
         private void OnRecvException(SimConnect sender, SIMCONNECT_RECV_EXCEPTION data)
