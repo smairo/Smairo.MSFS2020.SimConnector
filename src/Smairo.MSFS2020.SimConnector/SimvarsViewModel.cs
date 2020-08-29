@@ -53,6 +53,12 @@ namespace Smairo.MSFS2020.SimConnector
                     Definition.PlaneMetadatas,
                     0,
                     SIMCONNECT_SIMOBJECT_TYPE.USER);
+
+                _simConnection?.RequestDataOnSimObjectType(
+                    Request.GPS_IS_ACTIVE_FLIGHT_PLAN,
+                    Definition.GpsVariables,
+                    0,
+                    SIMCONNECT_SIMOBJECT_TYPE.USER);
             }
             catch (COMException ex)
             {
@@ -80,7 +86,6 @@ namespace Smairo.MSFS2020.SimConnector
                 _simConnection.OnRecvQuit += OnRecvQuit;
                 _simConnection.OnRecvException += OnRecvException;
                 _simConnection.OnRecvSimobjectDataBytype += OnRecvSimobjectDataByType;
-                _simConnection.OnRecvSimobjectData += OnRecvSimobjectData;
                 _simConnection.OnRecvEvent += OnRecvEvent;
 
                 // Setup crash
@@ -91,13 +96,15 @@ namespace Smairo.MSFS2020.SimConnector
                     Event.PositionChanged,
                     "PositionChanged");
                 _simConnection.SubscribeToSystemEvent(
-                    Event.SimStart,
-                    "SimStart");
+                    Event.FlightLoaded,
+                    "FlightLoaded");
+                _simConnection.SubscribeToSystemEvent(
+                    Event.FlightPlanActivated,
+                    "FlightPlanActivated");
+                _simConnection.SubscribeToSystemEvent(
+                    Event.FlightPlanDeactivated,
+                    "FlightPlanDeactivated");
 
-                //_simConnection.SubscribeToSystemEvent(
-                //    Event.FlightLoaded,
-                //    "FlightLoaded");
-                
                 var definition = Definition.PlaneMetadatas;
                 foreach (var value in _mapper.GetRequestsForStruct<PlaneMetadatas>())
                 {
@@ -136,6 +143,19 @@ namespace Smairo.MSFS2020.SimConnector
                             SimConnect.SIMCONNECT_UNUSED);
                 }
                 _simConnection.RegisterDataDefineStruct<SimulationVariables>(definition);
+
+                definition = Definition.GpsVariables;
+                foreach (var value in _mapper.GetRequestsForStruct<GpsVariables>())
+                {
+                    _simConnection.AddToDataDefinition(
+                        definition,
+                        value.NameUnitTuple.Name,
+                        value.NameUnitTuple.Unit,
+                        value.DataType,
+                        0.0f,
+                        SimConnect.SIMCONNECT_UNUSED);
+                }
+                _simConnection.RegisterDataDefineStruct<GpsVariables>(definition);
             }
             catch (COMException ex)
             {
@@ -144,49 +164,27 @@ namespace Smairo.MSFS2020.SimConnector
             }
         }
 
-        private void OnRecvSimobjectData(SimConnect sender, SIMCONNECT_RECV_SIMOBJECT_DATA data)
+        private void OnRecvEvent(SimConnect sender, SIMCONNECT_RECV_EVENT data)
         {
-            var val = data.dwData.FirstOrDefault();
-            if (val is null)
-                return;
-
-            PlaneMetadatas? planeMetadata = null;
-            PlaneVariables? planeVariables = null;
-            SimulationVariables? simVariables = null;
-            switch ((Definition) data.dwDefineID)
+            switch ((Event) data.uEventID)
             {
-                case Definition.PlaneMetadatas:
-                    planeMetadata = (PlaneMetadatas)val;
+                case Event.PositionChanged:
+                    Console.WriteLine("Position changed!");
                     break;
-                case Definition.PlaneVariables:
-                    planeVariables = (PlaneVariables)val;
+                case Event.FlightLoaded:
+                    Console.WriteLine("Flight loaded");
                     break;
-                case Definition.SimulationVariables:
-                    simVariables = (SimulationVariables)val;
+                case Event.FlightPlanActivated:
+                    Console.WriteLine("Flight plan activated");
+                    break;
+                case Event.FlightPlanDeactivated:
+                    Console.WriteLine("Flight plan deactivated");
+                    break;
+                case Event.PlaneCrashed:
+                    Console.WriteLine("Plane crashed");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
-            }
-
-            _dataWriter.WriteToStoreAsync(planeMetadata, planeVariables, simVariables)
-                .ConfigureAwait(false)
-                .GetAwaiter()
-                .GetResult();
-        }
-
-        private void OnRecvEvent(SimConnect sender, SIMCONNECT_RECV_EVENT data)
-        {
-            switch (data.uEventID)
-            {
-                case 0:
-                    Console.WriteLine("Plane Crashed!");
-                    break;
-                case 1:
-                    Console.WriteLine("Position changed!");
-                    break;
-                case 2:
-                    Console.WriteLine("Sim start/stop...");
-                    break;
             }
             
             //_dataWriter.WriteToStoreAsync(planeCrashed: true)
@@ -205,30 +203,34 @@ namespace Smairo.MSFS2020.SimConnector
             PlaneMetadatas? planeMetadata = null;
             PlaneVariables? planeVariables = null;
             SimulationVariables? simVariables = null;
+            GpsVariables? gpsVariables = null;
             switch ((Definition) data.dwDefineID)
             {
                 case Definition.PlaneMetadatas:
-                    planeMetadata = (PlaneMetadatas)val;
+                    planeMetadata = (PlaneMetadatas) val;
                     break;
                 case Definition.PlaneVariables:
-                    planeVariables = (PlaneVariables)val;
+                    planeVariables = (PlaneVariables) val;
                     break;
                 case Definition.SimulationVariables:
-                    simVariables = (SimulationVariables)val;
+                    simVariables = (SimulationVariables) val;
+                    break;
+                case Definition.GpsVariables:
+                    gpsVariables = (GpsVariables) val;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
 
-            _dataWriter.WriteToStoreAsync(planeMetadata, planeVariables, simVariables)
+            _dataWriter.WriteToStoreAsync(planeMetadata, planeVariables, simVariables, gpsVariables)
                 .ConfigureAwait(false)
                 .GetAwaiter()
                 .GetResult();
         }
 
-        private void OnRecvException(SimConnect sender, SIMCONNECT_RECV_EXCEPTION data)
+        private static void OnRecvException(SimConnect sender, SIMCONNECT_RECV_EXCEPTION data)
         {
-            SIMCONNECT_EXCEPTION eException = (SIMCONNECT_EXCEPTION)data.dwException;
+            var eException = (SIMCONNECT_EXCEPTION)data.dwException;
             Console.WriteLine("SimConnect_OnRecvException: " + eException.ToString());
             //Connected = false;
         }

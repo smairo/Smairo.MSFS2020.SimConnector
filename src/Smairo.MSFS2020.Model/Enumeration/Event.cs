@@ -4,7 +4,8 @@
     {
         PlaneCrashed,
         PositionChanged,
-        SimStart,
-        FlightLoaded
+        FlightLoaded,
+        FlightPlanActivated,
+        FlightPlanDeactivated
     }
 }

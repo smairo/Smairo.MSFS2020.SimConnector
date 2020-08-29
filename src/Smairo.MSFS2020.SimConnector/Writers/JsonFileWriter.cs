@@ -13,11 +13,13 @@ namespace Smairo.MSFS2020.SimConnector.Writers
         private PlaneMetadatas? _currentPlaneMetadata;
         private PlaneVariables? _currentPlaneVariables;
         private SimulationVariables? _currentSimVariables;
+        private GpsVariables? _currentGpsVariables;
 
         public async Task WriteToStoreAsync(
             PlaneMetadatas? metadata = null,
             PlaneVariables? planeVariables = null,
             SimulationVariables? simulationVariables = null,
+            GpsVariables? gpsVariables = null,
             bool? planeCrashed = null,
             bool? planeLanded = null)
         {
@@ -34,14 +36,19 @@ namespace Smairo.MSFS2020.SimConnector.Writers
             if (simulationVariables.HasValue)
                 _currentSimVariables = simulationVariables.Value;
 
+            if (gpsVariables.HasValue)
+                _currentGpsVariables = gpsVariables.Value;
+
             if (_currentPlaneMetadata.HasValue
                 && _currentPlaneVariables.HasValue
-                && _currentSimVariables.HasValue)
+                && _currentSimVariables.HasValue
+                && _currentGpsVariables.HasValue)
             {
                 var flightData = new SimVarCollection(
                     _currentPlaneMetadata.Value,
                     _currentPlaneVariables.Value,
-                    _currentSimVariables.Value);
+                    _currentSimVariables.Value,
+                    _currentGpsVariables.Value);
 
                 await WriteToJsonFileAsync(flightData);
             }

@@ -7,7 +7,8 @@ namespace Smairo.MSFS2020.Model
         public SimVarCollection(
             PlaneMetadatas metadata,
             PlaneVariables planeVariables,
-            SimulationVariables simVariables)
+            SimulationVariables simVariables,
+            GpsVariables gpsVariables)
         {
             SimulationRate = simVariables.SIMULATION_RATE;
             RealismCrashDetection = simVariables.REALISM_CRASH_DETECTION is 1.0;
@@ -18,6 +19,8 @@ namespace Smairo.MSFS2020.Model
             Longitude = planeVariables.PLANE_LONGITUDE;
             Airspeed = planeVariables.AIRSPEED_INDICATED;
             Title = metadata.TITLE;
+            GpsIsActive = gpsVariables.GPS_IS_ACTIVE_FLIGHT_PLAN is 1.0;
+            Arrived = gpsVariables.GPS_IS_ARRIVED is 1.0;
         }
 
         public double SimulationRate { get; set; }
@@ -29,6 +32,8 @@ namespace Smairo.MSFS2020.Model
         public double Latitude { get; set; }
         public double Airspeed { get; set; }
         public string Title { get; set; }
+        public bool GpsIsActive { get; set; }
+        public bool Arrived { get; set; }
 
         public string ToJson()
         {

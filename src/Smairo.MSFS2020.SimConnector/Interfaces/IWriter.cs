@@ -8,6 +8,7 @@ namespace Smairo.MSFS2020.SimConnector.Interfaces
             PlaneMetadatas? metadata = null,
             PlaneVariables? planeVariables = null,
             SimulationVariables? simulationVariables = null,
+            GpsVariables? gpsVariables = null,
             bool? planeCrashed = null,
             bool? planeLanded = null);
     }
