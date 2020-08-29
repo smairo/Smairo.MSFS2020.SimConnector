@@ -1,0 +1,4247 @@
+{
+  "NUMBER OF ENGINES": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENGINE CONTROL SELECT": {
+    "Unit": "Mask",
+    "Settable": true,
+    "DataType": 4
+  },
+  "THROTTLE LOWER LIMIT": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENGINE TYPE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MASTER IGNITION SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG COMBUSTION:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG MASTER ALTERNATOR:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG FUEL PUMP SWITCH:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG FUEL PUMP ON:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG RPM:index": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG PCT MAX RPM:index": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG MAX REACHED RPM:index": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG THROTTLE LEVER POSITION:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG MIXTURE LEVER POSITION:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG PROPELLER LEVER POSITION:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG STARTER:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG EXHAUST GAS TEMPERATURE:index": {
+    "Unit": "Rankine",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG OIL PRESSURE:index": {
+    "Unit": "Psf",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG OIL LEAKED PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG COMBUSTION SOUND PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG DAMAGE PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG OIL TEMPERATURE:index": {
+    "Unit": "Rankine",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG FAILED:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG GENERATOR SWITCH:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG GENERATOR ACTIVE:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG ANTI ICE POSITION:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG FUEL VALVE:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG FUEL PRESSURE:index": {
+    "Unit": "Psi",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GENERAL ENG ELAPSED TIME:index": {
+    "Unit": "Hours",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG COWL FLAP POSITION:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG PRIMER:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG MANIFOLD PRESSURE:index": {
+    "Unit": "Psi",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG ALTERNATE AIR POSITION:index": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG COOLANT RESERVOIR PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG LEFT MAGNETO:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG RIGHT MAGNETO:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG BRAKE POWER:index": {
+    "Unit": "Foot pounds per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG STARTER TORQUE:index": {
+    "Unit": "Foot pound",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG TURBOCHARGER FAILED:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG EMERGENCY BOOST ACTIVE:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG EMERGENCY BOOST ELAPSED TIME:index": {
+    "Unit": "Hours",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG WASTEGATE POSITION:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG TURBINE INLET TEMPERATURE:index": {
+    "Unit": "Celsius",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG CYLINDER HEAD TEMPERATURE:index": {
+    "Unit": "Celsius",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG RADIATOR TEMPERATURE:index": {
+    "Unit": "Celsius",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG FUEL AVAILABLE:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG FUEL FLOW:index": {
+    "Unit": "Pounds per hour",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG FUEL TANK SELECTOR:index": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG FUEL TANKS USED:index": {
+    "Unit": "Mask",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG FUEL NUMBER TANKS USED:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP CARBURETOR TEMPERATURE:index": {
+    "Unit": "Celsius",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP MIXTURE RATIO:index": {
+    "Unit": "Ratio",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG N1:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG N2:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG CORRECTED N1:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG CORRECTED N2:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG CORRECTED FF:index": {
+    "Unit": "Pounds per hour",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG MAX TORQUE PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG PRESSURE RATIO:index": {
+    "Unit": "Ratio",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG ITT:index": {
+    "Unit": "Rankine",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURB ENG AFTERBURNER:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG JET THRUST:index": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG BLEED AIR:index": {
+    "Unit": "Psi",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG TANK SELECTOR:index": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG TANKS USED:index": {
+    "Unit": "Mask",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG NUM TANKS USED:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG FUEL FLOW PPH:index": {
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG FUEL AVAILABLE:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG REVERSE NOZZLE PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG VIBRATION:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG FAILED:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG RPM ANIMATION PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG ON FIRE:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ENG FUEL FLOW BUG POSITION:index": {
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP RPM:index": {
+    "Unit": "Rpm",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PROP MAX RPM PERCENT:index": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP THRUST:index": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP BETA:index": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP FEATHERING INHIBIT:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP FEATHERED:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP SYNC DELTA LEVER:index": {
+    "Unit": "Position",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP AUTO FEATHER ARMED:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP FEATHER SWITCH:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PANEL AUTO FEATHER SWITCH:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP SYNC ACTIVE:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP DEICE SWITCH:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG COMBUSTION": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG N1 RPM:index": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG N2 RPM:index": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG FUEL FLOW GPH:index": {
+    "Unit": "Gallons per hour",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG FUEL FLOW PPH:index": {
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG TORQUE:index": {
+    "Unit": "Foot pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG ANTI ICE:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG PRESSURE RATIO:index": {
+    "Unit": "Ratio",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG EXHAUST GAS TEMPERATURE:index": {
+    "Unit": "Rankine",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG EXHAUST GAS TEMPERATURE GES:index": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG CYLINDER HEAD TEMPERATURE:index": {
+    "Unit": "Rankine",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG OIL TEMPERATURE:index": {
+    "Unit": "Rankine",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG OIL PRESSURE:index": {
+    "Unit": "Pounds per square foot",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG OIL QUANTITY:index": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG HYDRAULIC PRESSURE:index": {
+    "Unit": "Pounds per square foot",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG HYDRAULIC QUANTITY:index": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG MANIFOLD PRESSURE:index": {
+    "Unit": "inHG.",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG VIBRATION:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG RPM SCALER:index": {
+    "Unit": "Scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG MAX RPM": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG STARTER ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GENERAL ENG FUEL USED SINCE START": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG PRIMARY NOZZLE PERCENT:index": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG IGNITION SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG MASTER STARTER SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG AFTERBURNER STAGE ACTIVE": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURB ENG AFTERBURNER PCT ACTIVE": {
+    "Unit": "Percent_over_100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER2 LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER3 LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT MAIN LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT AUX LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT TIP LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT MAIN LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT AUX LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT TIP LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK EXTERNAL1 LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK EXTERNAL2 LEVEL": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER2 CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER3 CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT MAIN CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT AUX CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT TIP CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT MAIN CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT AUX CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT TIP CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK EXTERNAL1 CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK EXTERNAL2 CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL LEFT CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL RIGHT CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER2 QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK CENTER3 QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT MAIN QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT AUX QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK LEFT TIP QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT MAIN QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT AUX QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK RIGHT TIP QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK EXTERNAL1 QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL TANK EXTERNAL2 QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FUEL LEFT QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL RIGHT QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TOTAL QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL WEIGHT PER GALLON": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TANK SELECTOR:index": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL CROSS FEED": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TOTAL CAPACITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL SELECTED QUANTITY PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL SELECTED QUANTITY": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL TOTAL QUANTITY WEIGHT": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NUM FUEL SELECTORS": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "UNLIMITED FUEL": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ESTIMATED FUEL FLOW": {
+    "Unit": "Pounds per hour",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT STROBE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT PANEL": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT LANDING": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT TAXI": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT BEACON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT NAV": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT LOGO": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT WING": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT RECOGNITION": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT CABIN": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT ON STATES": {
+    "Unit": "Mask",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT STATES": {
+    "Unit": "Mask",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LANDING LIGHT PBH": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT TAXI ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT STROBE ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT PANEL ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT RECOGNITION ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT WING ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT LOGO ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT CABIN ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT HEAD ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT BRAKE ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT NAV ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT BEACON ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LIGHT LANDING ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GROUND VELOCITY": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL WORLD VELOCITY": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "VELOCITY BODY Z": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "VELOCITY BODY X": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "VELOCITY BODY Y": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "VELOCITY WORLD Z": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "VELOCITY WORLD X": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "VELOCITY WORLD Y": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ACCELERATION WORLD X": {
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ACCELERATION WORLD Y": {
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ACCELERATION WORLD Z": {
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ACCELERATION BODY X": {
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ACCELERATION BODY Y": {
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ACCELERATION BODY Z": {
+    "Unit": "Feet per second squared",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ROTATION VELOCITY BODY X": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ROTATION VELOCITY BODY Y": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ROTATION VELOCITY BODY Z": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RELATIVE WIND VELOCITY BODY X": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RELATIVE WIND VELOCITY BODY Y": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RELATIVE WIND VELOCITY BODY Z": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PLANE ALT ABOVE GROUND": {
+    "Unit": "Feet",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE LATITUDE": {
+    "Unit": "Degrees",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE LONGITUDE": {
+    "Unit": "Degrees",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE ALTITUDE": {
+    "Unit": "Feet",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE PITCH DEGREES": {
+    "Unit": "Radians",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE BANK DEGREES": {
+    "Unit": "Radians",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE HEADING DEGREES TRUE": {
+    "Unit": "Radians",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE HEADING DEGREES MAGNETIC": {
+    "Unit": "Radians",
+    "Settable": true,
+    "DataType": 4
+  },
+  "MAGVAR": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GROUND ALTITUDE": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SURFACE TYPE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SIM ON GROUND": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "INCIDENCE ALPHA": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "INCIDENCE BETA": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WING FLEX PCT:index": {
+    "Unit": "Percent over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "STRUCT LATLONALT": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT LATLONALTPBH": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT SURFACE RELATIVE VELOCITY": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT WORLDVELOCITY": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT WORLD ROTATION VELOCITY": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, radians per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT BODY VELOCITY": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT BODY ROTATION VELOCITY": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, radians per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT WORLD ACCELERATION": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, feet per second squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT ENGINE POSITION:index": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, feet.",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT EYEPOINT DYNAMIC ANGLE": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT EYEPOINT DYNAMIC OFFSET": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EYEPOINT POSITION": {
+    "Unit": "SIMCONNECT_DATA_XYZ structure, feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AIRSPEED TRUE": {
+    "Unit": "Knots",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AIRSPEED INDICATED": {
+    "Unit": "Knots",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AIRSPEED TRUE CALIBRATE": {
+    "Unit": "Degrees",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AIRSPEED BARBER POLE": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AIRSPEED MACH": {
+    "Unit": "Mach",
+    "Settable": false,
+    "DataType": 4
+  },
+  "VERTICAL SPEED": {
+    "Unit": "Feet per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "MACH MAX OPERATE": {
+    "Unit": "Mach",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STALL WARNING": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "OVERSPEED WARNING": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BARBER POLE MACH": {
+    "Unit": "Mach",
+    "Settable": false,
+    "DataType": 4
+  },
+  "INDICATED ALTITUDE": {
+    "Unit": "Feet",
+    "Settable": true,
+    "DataType": 4
+  },
+  "KOHLSMAN SETTING MB": {
+    "Unit": "Millibars",
+    "Settable": true,
+    "DataType": 4
+  },
+  "KOHLSMAN SETTING HG": {
+    "Unit": "Inches of Mercury, inHg",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ATTITUDE INDICATOR PITCH DEGREES": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ATTITUDE INDICATOR BANK DEGREES": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ATTITUDE BARS POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ATTITUDE CAGE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WISKEY COMPASS INDICATION DEGREES": {
+    "Unit": "Degrees",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PLANE HEADING DEGREES GYRO": {
+    "Unit": "Radians",
+    "Settable": true,
+    "DataType": 4
+  },
+  "HEADING INDICATOR": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GYRO DRIFT ERROR": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DELTA HEADING RATE": {
+    "Unit": "Radians per second",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TURN COORDINATOR BALL": {
+    "Unit": "Position",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ANGLE OF ATTACK INDICATOR": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RADIO HEIGHT": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PARTIAL PANEL ADF": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL AIRSPEED": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL ALTIMETER": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL ATTITUDE": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL COMM": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL COMPASS": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL ELECTRICAL": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL AVIONICS": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PARTIAL PANEL ENGINE": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL FUEL INDICATOR": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PARTIAL PANEL HEADING": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL VERTICAL VELOCITY": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL TRANSPONDER": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL NAV": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL PITOT": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PARTIAL PANEL TURN COORDINATOR": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PARTIAL PANEL VACUUM": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "MAX G FORCE": {
+    "Unit": "Gforce",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MIN G FORCE": {
+    "Unit": "Gforce",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SUCTION PRESSURE": {
+    "Unit": "Inches of Mercury, inHg",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AVIONICS MASTER SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV SOUND:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DME SOUND": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF SOUND:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MARKER SOUND": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM TRANSMIT:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM RECIEVE ALL": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM ACTIVE FREQUENCY:index": {
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM STANDBY FREQUENCY:index": {
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM STATUS:index": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV AVAILABLE:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV ACTIVE FREQUENCY:index": {
+    "Unit": "MHz",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV STANDBY FREQUENCY:index": {
+    "Unit": "MHz",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV SIGNAL:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV HAS NAV:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV HAS LOCALIZER:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV HAS DME:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV HAS GLIDE SLOPE:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV BACK COURSE FLAGS:index": {
+    "Unit": "Flags",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV MAGVAR:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV RADIAL:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV RADIAL ERROR:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV LOCALIZER:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV GLIDE SLOPE ERROR:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV CDI:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV GSI:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV TOFROM:index": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV GS FLAG:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV OBS:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV DME:index": {
+    "Unit": "Nautical miles",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV DMESPEED:index": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF ACTIVE FREQUENCY:index": {
+    "Unit": "Frequency ADF BCD32",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF STANDBY FREQUENCY:index": {
+    "Unit": "Hz",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF RADIAL:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF SIGNAL:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TRANSPONDER CODE:index": {
+    "Unit": "BCO16",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MARKER BEACON STATE": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "INNER MARKER": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "MIDDLE MARKER": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "OUTER MARKER": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "NAV RAW GLIDE SLOPE:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF CARD": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI CDI NEEDLE": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI GSI NEEDLE": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI CDI NEEDLE VALID": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI GSI NEEDLE VALID": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI TF FLAGS": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI BEARING VALID": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI BEARING": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI HAS LOCALIZER": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI SPEED": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HSI DISTANCE": {
+    "Unit": "Nautical miles",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS POSITION LAT": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS POSITION LON": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS POSITION ALT": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS MAGVAR": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS IS ACTIVE FLIGHT PLAN": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS IS ACTIVE WAY POINT": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS IS ARRIVED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS IS DIRECTTO FLIGHTPLAN": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS GROUND SPEED": {
+    "Unit": "Meters per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS GROUND TRUE HEADING": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS GROUND MAGNETIC TRACK": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS GROUND TRUE TRACK": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP DISTANCE": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP BEARING": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP TRUE BEARING": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP CROSS TRK": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP DESIRED TRACK": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP TRUE REQ HDG": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP VERTICAL SPEED": {
+    "Unit": "Meters per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP TRACK ANGLE ERROR": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS ETE": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS ETA": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP NEXT LAT": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP NEXT LON": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP NEXT ALT": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP PREV VALID": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP PREV LAT": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP PREV LON": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP PREV ALT": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP ETE": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP ETA": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS COURSE TO STEER": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS FLIGHT PLAN WP INDEX": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS FLIGHT PLAN WP COUNT": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS IS ACTIVE WP LOCKED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS IS APPROACH LOADED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS IS APPROACH ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH MODE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH WP TYPE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH IS WP RUNWAY": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH SEGMENT TYPE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH APPROACH INDEX": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH APPROACH TYPE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH TRANSITION INDEX": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH IS FINAL": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH IS MISSED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH TIMEZONE DEVIATION": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH WP INDEX": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS APPROACH WP COUNT": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS DRIVES NAV1": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM RECEIVE ALL": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COM TEST:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TRANSPONDER AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF FREQUENCY:index": {
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF EXT FREQUENCY:index": {
+    "Unit": "Frequency BCD16",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF IDENT": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "ADF NAME": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "NAV IDENT": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "NAV NAME": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "NAV CODES:index": {
+    "Unit": "Flags",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV GLIDE SLOPE": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV RELATIVE BEARING TO STATION:index": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SELECTED DME": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS WP NEXT ID": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "GPS WP PREV ID": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "GPS TARGET DISTANCE": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPS TARGET ALTITUDE": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ADF LATLONALT:index": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV VOR LATLONALT:index": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV GS LATLONALT:index": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV DME LATLONALT:index": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "INNER MARKER LATLONALT": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MIDDLE MARKER LATLONALT": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "OUTER MARKER LATLONALT": {
+    "Unit": "SIMCONNECT_DATA_LATLONALTstructure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "YOKE Y POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "YOKE X POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RUDDER PEDAL POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RUDDER POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELEVATOR POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AILERON POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELEVATOR TRIM POSITION": {
+    "Unit": "Radians",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELEVATOR TRIM INDICATOR": {
+    "Unit": "Position",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ELEVATOR TRIM PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BRAKE LEFT POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "BRAKE RIGHT POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "BRAKE INDICATOR": {
+    "Unit": "Position",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BRAKE PARKING POSITION": {
+    "Unit": "Position",
+    "Settable": true,
+    "DataType": 4
+  },
+  "BRAKE PARKING INDICATOR": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SPOILERS ARMED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SPOILERS HANDLE POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "SPOILERS LEFT POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SPOILERS RIGHT POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLAPS HANDLE PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLAPS HANDLE INDEX": {
+    "Unit": "Number",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FLAPS NUM HANDLE POSITIONS": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TRAILING EDGE FLAPS LEFT PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TRAILING EDGE FLAPS RIGHT PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TRAILING EDGE FLAPS LEFT ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TRAILING EDGE FLAPS RIGHT ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LEADING EDGE FLAPS LEFT PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "LEADING EDGE FLAPS RIGHT PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "LEADING EDGE FLAPS LEFT ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LEADING EDGE FLAPS RIGHT ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AILERON LEFT DEFLECTION": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AILERON LEFT DEFLECTION PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AILERON RIGHT DEFLECTION": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AILERON RIGHT DEFLECTION PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AILERON AVERAGE DEFLECTION": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AILERON TRIM": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AILERON TRIM PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RUDDER DEFLECTION": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RUDDER DEFLECTION PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RUDDER TRIM": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RUDDER TRIM PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FLAPS AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLAP DAMAGE BY SPEED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLAP SPEED EXCEEDED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ELEVATOR DEFLECTION": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ELEVATOR DEFLECTION PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ALTERNATE STATIC SOURCE OPEN": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FOLDING WING HANDLE POSITION": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL DUMP SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT MASTER": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT NAV SELECTED": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT WING LEVELER": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT NAV1 LOCK": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT HEADING LOCK": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT HEADING LOCK DIR": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT ALTITUDE LOCK": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT ALTITUDE LOCK VAR": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT ATTITUDE HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT GLIDESLOPE HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT PITCH HOLD REF": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT APPROACH HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT BACKCOURSE HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT VERTICAL HOLD VAR": {
+    "Unit": "Feet/minute",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT PITCH HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT FLIGHT DIRECTOR ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT FLIGHT DIRECTOR PITCH": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT FLIGHT DIRECTOR BANK": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT AIRSPEED HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT AIRSPEED HOLD VAR": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT MACH HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT MACH HOLD VAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT YAW DAMPER": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT RPM HOLD VAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT THROTTLE ARM": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT TAKEOFF POWER ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOTHROTTLE ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT VERTICAL HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT RPM HOLD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTOPILOT MAX BANK": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLY BY WIRE ELAC SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLY BY WIRE FAC SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLY BY WIRE SEC SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLY BY WIRE ELAC FAILED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLY BY WIRE FAC FAILED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FLY BY WIRE SEC FAILED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS GEAR RETRACTABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS GEAR SKIS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS GEAR FLOATS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS GEAR SKIDS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS GEAR WHEELS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR HANDLE POSITION": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GEAR HYDRAULIC PRESSURE": {
+    "Unit": "Pound force per square foot",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TAILWHEEL LOCK ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR CENTER POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GEAR LEFT POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GEAR RIGHT POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GEAR TAIL POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR AUX POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR POSITION:index": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GEAR ANIMATION POSITION:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR TOTAL PCT EXTENDED": {
+    "Unit": "Percentage",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUTO BRAKE SWITCH CB": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WATER RUDDER HANDLE POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "WATER LEFT RUDDER EXTENDED": {
+    "Unit": "Percentage",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WATER RIGHT RUDDER EXTENDED": {
+    "Unit": "Percentage",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR CENTER STEER ANGLE": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR LEFT STEER ANGLE": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR RIGHT STEER ANGLE": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR AUX STEER ANGLE": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR STEER ANGLE:index": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WATER LEFT RUDDER STEER ANGLE": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WATER RIGHT RUDDER STEER ANGLE": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR CENTER STEER ANGLE PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR LEFT STEER ANGLE PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR RIGHT STEER ANGLE PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR AUX STEER ANGLE PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR STEER ANGLE PCT:index": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WATER LEFT RUDDER STEER ANGLE PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WATER RIGHT RUDDER STEER ANGLE PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WHEEL RPM:index": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CENTER WHEEL RPM": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LEFT WHEEL RPM": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RIGHT WHEEL RPM": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUX WHEEL RPM": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WHEEL ROTATION ANGLE:index": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CENTER WHEEL ROTATION ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LEFT WHEEL ROTATION ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RIGHT WHEEL ROTATION ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AUX WHEEL ROTATION ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR EMERGENCY HANDLE POSITION": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR WARNING": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ANTISKID BRAKES ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RETRACT FLOAT SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RETRACT LEFT FLOAT EXTENDED": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RETRACT RIGHT FLOAT EXTENDED": {
+    "Unit": "Percent",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STEER INPUT CONTROL": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR DAMAGE BY SPEED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GEAR SPEED EXCEEDED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NOSEWHEEL LOCK ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT DENSITY": {
+    "Unit": "Slugs per cubic feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT TEMPERATURE": {
+    "Unit": "Celsius",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT PRESSURE": {
+    "Unit": "Inches of mercury, inHg",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT WIND VELOCITY": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT WIND DIRECTION": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT WIND X": {
+    "Unit": "Meters per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT WIND Y": {
+    "Unit": "Meters per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT WIND Z": {
+    "Unit": "Meters per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCT AMBIENT WIND": {
+    "Unit": "Feet_per_second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT PRECIP STATE": {
+    "Unit": "Mask",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AIRCRAFT WIND X": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AIRCRAFT WIND Y": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AIRCRAFT WIND Z": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BAROMETER PRESSURE": {
+    "Unit": "Millibars",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SEA LEVEL PRESSURE": {
+    "Unit": "Millibars",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL AIR TEMPERATURE": {
+    "Unit": "Celsius",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WINDSHIELD RAIN EFFECT AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT IN CLOUD": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AMBIENT VISIBILITY": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STANDARD ATM TEMPERATURE": {
+    "Unit": "Rankine",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR BRAKE HANDLE POS": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR BRAKE ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR CLUTCH SWITCH POS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR CLUTCH ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR TEMPERATURE": {
+    "Unit": "Rankine",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR CHIP DETECTED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR GOV SWITCH POS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR GOV ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR LATERAL TRIM PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR RPM PCT": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG TURBINE TEMPERATURE": {
+    "Unit": "Celsius scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG TORQUE PERCENT:index": {
+    "Unit": "Percent scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG FUEL PRESSURE": {
+    "Unit": "PSI scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG ELECTRICAL LOAD": {
+    "Unit": "Percent scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG TRANSMISSION PRESSURE": {
+    "Unit": "PSI scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG TRANSMISSION TEMPERATURE": {
+    "Unit": "Celsius scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENG ROTOR RPM:index": {
+    "Unit": "Percent scalar",
+    "Settable": false,
+    "DataType": 4
+  },
+  "COLLECTIVE POSITION": {
+    "Unit": "Percent_over_100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NUM SLING CABLES": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PAYLOAD STATION OBJECT:index": {
+    "Unit": "",
+    "Settable": true,
+    "DataType": 9
+  },
+  "PAYLOAD STATION NUM SIMOBJECTS:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SLING OBJECT ATTACHED:index": {
+    "Unit": "Bool/",
+    "Settable": false,
+    "DataType": 9
+  },
+  "SLING CABLE BROKEN:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SLING CABLE EXTENDED LENGTH:index": {
+    "Unit": "Feet",
+    "Settable": true,
+    "DataType": 4
+  },
+  "SLING ACTIVE PAYLOAD STATION:index": {
+    "Unit": "Number",
+    "Settable": true,
+    "DataType": 4
+  },
+  "SLING HOIST PERCENT DEPLOYED:index": {
+    "Unit": "Percent_over_100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SLING HOOK IN PICKUP MODE:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS ATTACHED TO SLING": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SMOKE ENABLE": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "SMOKESYSTEM AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PITOT HEAT": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FOLDING WING LEFT PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "FOLDING WING RIGHT PERCENT": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "CANOPY OPEN": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TAILHOOK POSITION": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "EXIT OPEN:index": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "STALL HORN AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ENGINE MIXURE AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CARB HEAT AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SPOILER AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS TAIL DRAGGER": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STROBES AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOE BRAKES AVAILABLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PUSHBACK STATE": {
+    "Unit": "Enum",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL MASTER BATTERY": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL TOTAL LOAD AMPS": {
+    "Unit": "Amperes",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL BATTERY LOAD": {
+    "Unit": "Amperes",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL BATTERY VOLTAGE": {
+    "Unit": "Volts",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL MAIN BUS VOLTAGE": {
+    "Unit": "Volts",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL MAIN BUS AMPS": {
+    "Unit": "Amperes",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL AVIONICS BUS VOLTAGE": {
+    "Unit": "Volts",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL AVIONICS BUS AMPS": {
+    "Unit": "Amperes",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL HOT BATTERY BUS VOLTAGE": {
+    "Unit": "Volts",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL HOT BATTERY BUS AMPS": {
+    "Unit": "Amperes",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL BATTERY BUS VOLTAGE": {
+    "Unit": "Volts",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL BATTERY BUS AMPS": {
+    "Unit": "Amperes",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL GENALT BUS VOLTAGE:index": {
+    "Unit": "Volts",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ELECTRICAL GENALT BUS AMPS:index": {
+    "Unit": "Amperes",
+    "Settable": true,
+    "DataType": 4
+  },
+  "CIRCUIT GENERAL PANEL ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT FLAP MOTOR ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT GEAR MOTOR ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT AUTOPILOT ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT AVIONICS ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT PITOT HEAT ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT PROP SYNC ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT AUTO FEATHER ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT AUTO BRAKES ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT STANDY VACUUM ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT MARKER BEACON ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT GEAR WARNING ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CIRCUIT HYDRAULIC PUMP ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HYDRAULIC PRESSURE:index": {
+    "Unit": "Pound force per square foot",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HYDRAULIC RESERVOIR PERCENT:index": {
+    "Unit": "Percent Over 100",
+    "Settable": true,
+    "DataType": 4
+  },
+  "HYDRAULIC SYSTEM INTEGRITY": {
+    "Unit": "Percent Over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCTURAL DEICE SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "APPLY HEAT TO SYSTEMS": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "DROPPABLE OBJECTS TYPE:index": {
+    "Unit": "",
+    "Settable": true,
+    "DataType": 9
+  },
+  "DROPPABLE OBJECTS COUNT:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL WEIGHT": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MAX GROSS WEIGHT": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EMPTY WEIGHT": {
+    "Unit": "Pounds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS USER SIM": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SIM DISABLED": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "G FORCE": {
+    "Unit": "GForce",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ATC HEAVY": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AUTO COORDINATION": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "REALISM": {
+    "Unit": "Number",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TRUE AIRSPEED SELECTED": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "DESIGN SPEED VS0": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DESIGN SPEED VS1": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DESIGN SPEED VC": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MIN DRAG VELOCITY": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ESTIMATED CRUISE SPEED": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CG PERCENT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CG PERCENT LATERAL": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS SLEW ACTIVE": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "IS SLEW ALLOWED": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "ATC SUGGESTED MIN RWY TAKEOFF": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ATC SUGGESTED MIN RWY LANDING": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PAYLOAD STATION WEIGHT:index": {
+    "Unit": "Pounds",
+    "Settable": true,
+    "DataType": 4
+  },
+  "PAYLOAD STATION COUNT": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "USER INPUT ENABLED": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "TYPICAL DESCENT RATE": {
+    "Unit": "Feet per minute",
+    "Settable": false,
+    "DataType": 4
+  },
+  "VISUAL MODEL RADIUS": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CATEGORY": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "SIGMA SQRT": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DYNAMIC PRESSURE": {
+    "Unit": "Pounds per square foot",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL VELOCITY": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AIRSPEED SELECT INDICATED OR TRUE": {
+    "Unit": "Knots",
+    "Settable": false,
+    "DataType": 4
+  },
+  "VARIOMETER RATE": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "VARIOMETER SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PRESSURE ALTITUDE": {
+    "Unit": "Meters",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MAGNETIC COMPASS": {
+    "Unit": "Degrees",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURN INDICATOR RATE": {
+    "Unit": "Radians per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TURN INDICATOR SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "YOKE Y INDICATOR": {
+    "Unit": "Position",
+    "Settable": false,
+    "DataType": 4
+  },
+  "YOKE X INDICATOR": {
+    "Unit": "Position",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RUDDER PEDAL INDICATOR": {
+    "Unit": "Position",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BRAKE DEPENDENT HYDRAULIC PRESSURE": {
+    "Unit": "Pounds per square foot",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PANEL ANTI ICE SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WING AREA": {
+    "Unit": "Square feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WING SPAN": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BETA DOT": {
+    "Unit": "Radians per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LINEAR CL ALPHA": {
+    "Unit": "Per radian",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STALL ALPHA": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ZERO LIFT ALPHA": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CG AFT LIMIT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CG FWD LIMIT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CG MAX MACH": {
+    "Unit": "Machs",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CG MIN MACH": {
+    "Unit": "Machs",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PAYLOAD STATION NAME": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "ELEVON DEFLECTION": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EXIT TYPE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EXIT POSX": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EXIT POSY": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EXIT POSZ": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DECISION HEIGHT": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DECISION ALTITUDE MSL": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EMPTY WEIGHT PITCH MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EMPTY WEIGHT ROLL MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EMPTY WEIGHT YAW MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "EMPTY WEIGHT CROSS COUPLED MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL WEIGHT PITCH MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL WEIGHT ROLL MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL WEIGHT YAW MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOTAL WEIGHT CROSS COUPLED MOI": {
+    "Unit": "Slugs per feet squared",
+    "Settable": false,
+    "DataType": 4
+  },
+  "WATER BALLAST VALVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MAX RATED ENGINE RPM": {
+    "Unit": "Rpm",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FULL THROTTLE THRUST TO WEIGHT RATIO": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP AUTO CRUISE ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP ROTATION ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP BETA MAX": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP BETA MIN": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PROP BETA MIN REVERSE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FUEL SELECTED TRANSFER MODE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DROPPABLE OBJECTS UI NAME": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "MANUAL FUEL PUMP HANDLE": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BLEED AIR SOURCE CONTROL": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ELECTRICAL OLD CHARGING AMPS": {
+    "Unit": "Amps",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HYDRAULIC SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CONCORDE VISOR NOSE HANDLE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CONCORDE VISOR POSITION PERCENT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CONCORDE NOSE ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "REALISM CRASH WITH OTHERS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "REALISM CRASH DETECTION": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "MANUAL INSTRUMENT LIGHTS": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PITOT ICE PCT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SEMIBODY LOADFACTOR Y": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SEMIBODY LOADFACTOR YDOT": {
+    "Unit": "Per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RAD INS SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SIMULATED RADIUS": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STRUCTURAL ICE PCT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ARTIFICIAL GROUND ELEVATION": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SURFACE INFO VALID": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SURFACE CONDITION": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PUSHBACK ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PUSHBACK CONTACTX": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PUSHBACK CONTACTY": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PUSHBACK CONTACTZ": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PUSHBACK WAIT": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "YAW  ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "YAW  PCT EXTENDED": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "INDUCTOR COMPASS PERCENT DEVIATION": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "INDUCTOR COMPASS HEADING REF": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ANEMOMETER PCT RPM": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ROTOR ROTATION ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DISK PITCH ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DISK BANK ANGLE": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DISK PITCH PCT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DISK BANK PCT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "DISK CONING PCT": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV VOR LLAF64": {
+    "Unit": "LLA structure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NAV GS LLAF64": {
+    "Unit": "LLA structure",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STATIC CG TO GROUND": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "STATIC PITCH": {
+    "Unit": "Radians",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CRASH SEQUENCE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CRASH FLAG": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOW RELEASE HANDLE": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TOW CONNECTION": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "APU PCT RPM": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "APU PCT STARTER": {
+    "Unit": "Percent over 100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "APU VOLTS": {
+    "Unit": "Volts",
+    "Settable": false,
+    "DataType": 4
+  },
+  "APU GENERATOR SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "APU GENERATOR ACTIVE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "APU ON FIRE DETECTED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PRESSURIZATION CABIN ALTITUDE": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PRESSURIZATION CABIN ALTITUDE GOAL": {
+    "Unit": "Feet",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PRESSURIZATION CABIN ALTITUDE RATE": {
+    "Unit": "Feet per second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PRESSURIZATION PRESSURE DIFFERENTIAL": {
+    "Unit": "Pounds per square foot",
+    "Settable": false,
+    "DataType": 4
+  },
+  "PRESSURIZATION DUMP SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FIRE BOTTLE SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "FIRE BOTTLE DISCHARGED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CABIN NO SMOKING ALERT SWITCH": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "CABIN SEATBELTS ALERT SWITCH": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "GPWS WARNING": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "GPWS SYSTEM ACTIVE": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "IS LATITUDE LONGITUDE FREEZE ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS ALTITUDE FREEZE ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "IS ATTITUDE FREEZE ON": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ATC TYPE": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "ATC MODEL": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "ATC ID": {
+    "Unit": "",
+    "Settable": true,
+    "DataType": 9
+  },
+  "ATC AIRLINE": {
+    "Unit": "",
+    "Settable": true,
+    "DataType": 9
+  },
+  "ATC FLIGHT NUMBER": {
+    "Unit": "",
+    "Settable": true,
+    "DataType": 9
+  },
+  "TITLE": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "HSI STATION IDENT": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "GPS WP_PREV ID": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "GPS WP_NEXT ID": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "GPS APPROACH AIRPORT ID": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "GPS APPROACH APPROACH ID": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "GPS APPROACH TRANSITION ID": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "AI DESIRED SPEED": {
+    "Unit": "Knots",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AI WAYPOINT LIST": {
+    "Unit": "SIMCONNECT_DATA_WAYPOINT structure list",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AI CURRENT WAYPOINT": {
+    "Unit": "Number",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AI DESIRED HEADING": {
+    "Unit": "Degrees",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AI GROUNDTURNTIME": {
+    "Unit": "Seconds",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AI GROUNDCRUISESPEED": {
+    "Unit": "Knots",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AI GROUNDTURNSPEED": {
+    "Unit": "Knots",
+    "Settable": true,
+    "DataType": 4
+  },
+  "AI TRAFFIC ISIFR": {
+    "Unit": "Boolean",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AI TRAFFIC STATE": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "AI TRAFFIC CURRENT AIRPORT": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "AI TRAFFIC ASSIGNED RUNWAY": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "AI TRAFFIC ASSIGNED PARKING": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "AI TRAFFIC FROMAIRPORT": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "AI TRAFFIC TOAIRPORT": {
+    "Unit": "",
+    "Settable": false,
+    "DataType": 9
+  },
+  "AI TRAFFIC ETD": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "AI TRAFFIC ETA": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LAUNCHBAR POSITION": {
+    "Unit": "Percent_over_100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LAUNCHBAR SWITCH": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LAUNCHBAR HELD EXTENDED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "NUMBER OF CATAPULTS": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CATAPULT STROKE POSITION:index": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "HOLDBACK BAR INSTALLED": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "BLAST SHIELD POSITION:index": {
+    "Unit": "Percent_over_100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "CABLE CAUGHT BY TAILHOOK": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TAILHOOK HANDLE": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SURFACE RELATIVE GROUND SPEED": {
+    "Unit": "Feet_per_second",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG DETONATING:index": {
+    "Unit": "Bool",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG CYLINDER HEALTH:index": {
+    "Unit": "Percent_over_100",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG NUM CYLINDERS": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG NUM CYLINDERS FAILED": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG ANTIDETONATION TANK VALVE:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG ANTIDETONATION TANK QUANTITY:index": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG ANTIDETONATION TANK MAX QUANTITY:index": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "RECIP ENG NITROUS TANK VALVE:index": {
+    "Unit": "Bool",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG NITROUS TANK QUANTITY:index": {
+    "Unit": "Gallons",
+    "Settable": true,
+    "DataType": 4
+  },
+  "RECIP ENG NITROUS TANK MAX QUANTITY:index": {
+    "Unit": "Gallons",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ABSOLUTE TIME": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ZULU TIME": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ZULU DAY OF WEEK": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ZULU DAY OF MONTH": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ZULU MONTH OF YEAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ZULU DAY OF YEAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "ZULU YEAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LOCAL TIME": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LOCAL DAY OF WEEK": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LOCAL DAY OF MONTH": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LOCAL MONTH OF YEAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LOCAL DAY OF YEAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "LOCAL YEAR": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TIME ZONE OFFSET": {
+    "Unit": "Seconds",
+    "Settable": false,
+    "DataType": 4
+  },
+  "TIME OF DAY": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  },
+  "SIMULATION RATE": {
+    "Unit": "Number",
+    "Settable": false,
+    "DataType": 4
+  },
+  "UNITS OF MEASURE": {
+    "Unit": "Enum",
+    "Settable": false,
+    "DataType": 4
+  }
+}

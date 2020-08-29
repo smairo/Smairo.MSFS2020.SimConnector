@@ -14,4 +14,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="simvariables.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

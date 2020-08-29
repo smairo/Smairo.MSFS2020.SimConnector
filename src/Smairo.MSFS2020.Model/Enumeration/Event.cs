@@ -2,6 +2,9 @@
 {
     public enum Event
     {
-        PlaneCrashed
+        PlaneCrashed,
+        PositionChanged,
+        SimStart,
+        FlightLoaded
     }
 }

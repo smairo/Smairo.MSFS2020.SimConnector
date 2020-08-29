@@ -50,7 +50,7 @@ namespace Smairo.MSFS2020.SimConnector.Writers
         private Task WriteToJsonFileAsync(SimVarCollection flightData)
         {
             var json = flightData.ToJson();
-            Console.Write(json + Environment.NewLine);
+            //Console.Write(json + Environment.NewLine);
             File.WriteAllText("flight.json", json, Encoding.UTF8);
 
             _currentSimVariables = null;

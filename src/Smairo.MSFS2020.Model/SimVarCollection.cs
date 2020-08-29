@@ -9,41 +9,25 @@ namespace Smairo.MSFS2020.Model
             PlaneVariables planeVariables,
             SimulationVariables simVariables)
         {
-            SimulationRate = simVariables.SimulationRate;
-            RealismCrashDetection = simVariables.RealismCrashDetection;
-            RealismPercentage = simVariables.RealismPercentage;
-            UnlimitedFuelFlag = simVariables.UnlimitedFuelFlag;
-            CrashFlag = simVariables.CrashFlag;
-            Altitude = planeVariables.Altitude;
-            Latitude = planeVariables.Latitude;
-            Longitude = planeVariables.Longitude;
-            AirspeedTrue = planeVariables.AirspeedTrue;
-            FuelTotal = planeVariables.FuelTotal;
-            TotalWeight = planeVariables.TotalWeight;
-            AtcAirline = metadata.AtcAirline;
-            AtcFlightNumber = metadata.AtcFlightNumber;
-            AtcId = metadata.AtcId;
-            AtcType = metadata.AtcType;
-            AtcModel = metadata.AtcModel;
-            Title = metadata.Title;
+            SimulationRate = simVariables.SIMULATION_RATE;
+            RealismCrashDetection = simVariables.REALISM_CRASH_DETECTION is 1.0;
+            Grounded = planeVariables.SIM_ON_GROUND is 1.0;
+            UnlimitedFuelFlag = simVariables.UNLIMITED_FUEL is 1.0;
+            Altitude = planeVariables.PLANE_ALTITUDE;
+            Latitude = planeVariables.PLANE_LATITUDE;
+            Longitude = planeVariables.PLANE_LONGITUDE;
+            Airspeed = planeVariables.AIRSPEED_INDICATED;
+            Title = metadata.TITLE;
         }
 
         public double SimulationRate { get; set; }
-        public double RealismPercentage { get; set; }
+        public bool Grounded { get; set; }
         public bool RealismCrashDetection { get; set; }
         public bool UnlimitedFuelFlag { get; set; }
-        public int CrashFlag { get; set; }
         public double Altitude { get; set; }
         public double Longitude { get; set; }
         public double Latitude { get; set; }
-        public double AirspeedTrue { get; set; }
-        public double FuelTotal { get; set; }
-        public double TotalWeight { get; set; }
-        public string AtcType { get; set; }
-        public string AtcModel { get; set; }
-        public string AtcAirline { get; set; }
-        public string AtcId { get; set; }
-        public string AtcFlightNumber { get; set; }
+        public double Airspeed { get; set; }
         public string Title { get; set; }
 
         public string ToJson()

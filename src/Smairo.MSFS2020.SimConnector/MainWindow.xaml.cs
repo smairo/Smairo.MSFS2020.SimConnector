@@ -2,6 +2,8 @@
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Threading;
+using Smairo.MSFS2020.Model;
+using Smairo.MSFS2020.Model.Structs;
 using Smairo.MSFS2020.SimConnector.Interfaces;
 namespace Smairo.MSFS2020.SimConnector
 {
@@ -12,7 +14,7 @@ namespace Smairo.MSFS2020.SimConnector
     {
         private readonly DispatcherTimer _timer = new DispatcherTimer();
         private readonly SimvarsViewModel _model;
-        public MainWindow() 
+        public MainWindow()
         {
             _model = new SimvarsViewModel();
             InitializeComponent();
