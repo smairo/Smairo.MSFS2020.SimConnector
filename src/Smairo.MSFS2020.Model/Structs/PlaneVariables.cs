@@ -8,8 +8,8 @@ namespace Smairo.MSFS2020.Model.Structs
         public double Altitude;
         public double Longitude;
         public double Latitude;
-        public double AirspeedTrue;
         public double FuelTotal;
+        public double AirspeedTrue;
         public double TotalWeight;
     }
 }

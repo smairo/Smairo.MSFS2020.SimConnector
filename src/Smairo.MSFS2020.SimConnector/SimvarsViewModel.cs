@@ -24,7 +24,6 @@ namespace Smairo.MSFS2020.SimConnector
         private readonly IWriter _dataWriter = new JsonFileWriter();
 
         public bool Connected { get; private set; }
-        private bool _collectionSet;
 
         private IntPtr _hWnd = new IntPtr(0);
         private SimConnect _simConnection;
@@ -38,9 +37,6 @@ namespace Smairo.MSFS2020.SimConnector
 
         private void OnTickPullData(object sender, EventArgs e)
         {
-            //if(_collectionSet) return;
-            // TODO EX
-
             _simConnection?.RequestDataOnSimObjectType(
                Request.PlaneAltitude,
                Definition.PlaneVariable,
@@ -58,42 +54,6 @@ namespace Smairo.MSFS2020.SimConnector
                 Definition.PlaneMetadata,
                 0,
                 SIMCONNECT_SIMOBJECT_TYPE.USER);
-
-            //var requests = _requestedData;
-            //for (var i = 0; i < requests.Count; i++)
-            //{
-            //    var simvarRequest = requests[i];
-            //    //_simConnection?.RequestDataOnSimObject(
-            //    //    simvarRequest.Request,
-            //    //    simvarRequest.Definition,
-            //    //    (uint) i,
-            //    //    SIMCONNECT_PERIOD.SECOND,
-            //    //    SIMCONNECT_DATA_REQUEST_FLAG.DEFAULT,
-            //    //    0,
-            //    //    0,
-            //    //    0
-            //    //);
-            //    _simConnection?.RequestDataOnSimObjectType(
-            //        simvarRequest.Request,
-            //        simvarRequest.Definition,
-            //       0,
-            //       SIMCONNECT_SIMOBJECT_TYPE.USER);
-            //}
-            //foreach (var simvarRequest in _requestedData)
-            //{
-            //    _simConnection?.RequestDataOnSimObject(
-            //        simvarRequest.Request,
-            //        simvarRequest.Definition,
-            //        0,
-            //        SIMCONNECT_PERIOD.SECOND,
-            //        SIMCONNECT_DATA_REQUEST_FLAG.CHANGED,
-            //        0,
-            //        0,
-            //        0
-            //    );
-            //}
-
-            _collectionSet = true;
         }
 
         public void Connect()
@@ -114,13 +74,10 @@ namespace Smairo.MSFS2020.SimConnector
                 _simConnection.OnRecvOpen += OnRecvOpen;
                 _simConnection.OnRecvQuit += OnRecvQuit;
                 _simConnection.OnRecvException += OnRecvException;
-                _simConnection.OnRecvSimobjectDataBytype += OnRecvSimobjectDataBytype;
-                _simConnection.OnRecvSimobjectData += OnRecvSimobjectData;
-
-                _simConnection.OnRecvClientData += OnRecvClientData;
-
-                // Get plane crash
+                _simConnection.OnRecvSimobjectDataBytype += OnRecvSimobjectDataByType;
                 _simConnection.OnRecvEvent += OnRecvEvent;
+
+                // Setup crash
                 _simConnection.SubscribeToSystemEvent(
                     Event.PlaneCrashed,
                     "Crashed");
@@ -163,20 +120,6 @@ namespace Smairo.MSFS2020.SimConnector
                         SimConnect.SIMCONNECT_UNUSED);
                 }
                 _simConnection.RegisterDataDefineStruct<SimulationVariables>(definition);
-
-
-                //foreach (var value in _requestedData)
-                //{
-                //    _simConnection.AddToDataDefinition(
-                //        value.Definition,
-                //        value.NameUnitTuple.Name,
-                //        value.NameUnitTuple.Unit,
-                //        value.DataType,
-                //        0.0f,
-                //        SimConnect.SIMCONNECT_UNUSED);
-
-                //    _simConnection.RegisterDataDefineStruct<double>(value.Definition);
-                //}
             }
             catch (COMException ex)
             {
@@ -194,26 +137,16 @@ namespace Smairo.MSFS2020.SimConnector
         }
 
         #region Client reciever events
-        private void OnRecvClientData(SimConnect sender, SIMCONNECT_RECV_CLIENT_DATA data)
-        {
-        }
-
-        private void OnRecvSimobjectData(SimConnect sender, SIMCONNECT_RECV_SIMOBJECT_DATA data)
-        {
-        }
-
-        private void OnRecvSimobjectDataBytype(SimConnect sender, SIMCONNECT_RECV_SIMOBJECT_DATA_BYTYPE data)
+        private void OnRecvSimobjectDataByType(SimConnect sender, SIMCONNECT_RECV_SIMOBJECT_DATA_BYTYPE data)
         {
             var val = data.dwData.FirstOrDefault();
             if (val is null)
-            {
                 return;
-            }
 
             PlaneMetadatas? planeMetadata = null;
             PlaneVariables? planeVariables = null;
             SimulationVariables? simVariables = null;
-            switch ((Definition)data.dwDefineID)
+            switch ((Definition) data.dwDefineID)
             {
                 case Definition.PlaneMetadata:
                     planeMetadata = (PlaneMetadatas)val;
@@ -242,6 +175,7 @@ namespace Smairo.MSFS2020.SimConnector
         private void OnRecvQuit(SimConnect sender, SIMCONNECT_RECV data)
         {
             Connected = false;
+            _pullDataTimer.Stop();
         }
 
         private void OnRecvOpen(SimConnect sender, SIMCONNECT_RECV_OPEN data)
